@@ -1,0 +1,82 @@
+/* ====== Navbar ====== */
+
+.navbar {
+    background-color: #1e1e2f;
+    /* خلفية داكنة رسمية */
+    padding: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ====== Logo ====== */
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f0f0f0 !important;
+    /* أبيض بارز فوق الخلفية الداكنة */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 1px;
+    z-index: 10;
+    /* يضمن أن النص فوق أي عناصر أخرى */
+}
+
+.logo-icon {
+    font-size: 1.6rem;
+    color: #4dabf7;
+    /* أيقونة بلون مميز */
+}
+
+
+/* ====== Navigation Links ====== */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #4dabf7;
+    /* لون مميز عند التفاعل */
+}
+
+.nav-icon {
+    font-size: 1rem;
+    color: #4dabf7;
+    /* أيقونات بلون أزرق مميز */
+}
+
+
+/* ====== Responsive ====== */
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #1e1e2f;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 1rem;
+        display: none;
+        /* لاحقًا ممكن تعمل toggle بالـ JS */
+    }
+}

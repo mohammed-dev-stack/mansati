@@ -1,0 +1,169 @@
+/* Reset أساسي */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* رأس الصفحة */
+
+.admin-header {
+    background: linear-gradient(135deg, #0066cc, #0099ff);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 4px solid #004080;
+}
+
+.admin-header h1,
+.admin-header h2 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.admin-header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+
+/* شريط التنقل */
+
+.admin-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-nav li {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #555;
+}
+
+.admin-nav li:hover {
+    background: #f0f8ff;
+    color: #0066cc;
+}
+
+.admin-nav li.active {
+    border-bottom: 3px solid #0066cc;
+    color: #0066cc;
+}
+
+
+/* محتوى الأقسام */
+
+.admin-section {
+    padding: 2rem;
+    background: #fff;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 1200px;
+}
+
+
+/* الجداول */
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+    background: #f9fafc;
+    font-weight: 700;
+    color: #444;
+}
+
+.admin-table tr:hover {
+    background: #f5faff;
+}
+
+
+/* الصور الرمزية */
+
+.avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0066cc;
+}
+
+
+/* الأزرار */
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-edit {
+    background: #ffc107;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+.btn-edit:hover {
+    background: #e0a800;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+
+/* رسائل الخطأ */
+
+.error {
+    color: #dc3545;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+
+/* استجابة للشاشات الصغيرة */
+
+@media (max-width: 768px) {
+    .admin-table th,
+    .admin-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    .admin-nav li {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}
